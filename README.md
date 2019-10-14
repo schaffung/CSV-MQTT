@@ -18,4 +18,6 @@ Then the resulting MQTT Payload will be of the form,
   "School" : "dummy_school"
 }
 
-It is a minimal code and anyone can tweak it to run for their needs.
+Now, I am assuming that one would want to loop through the publish part and hence, the code will assume that the .csv is constant and it will just publish the same set of data again and again.
+
+NOTE : It is a minimal code and anyone can tweak it to run for their needs.
