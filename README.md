@@ -18,8 +18,18 @@ Then the resulting MQTT Payload will be of the form,
   "School" : "dummy_school"
 }
 
-Now, I am assuming that one would want to loop through the publish part and hence, the code will assume that the .csv is constant and it will just publish the same set of data again and again.
+One can install the package using pip
 
-NOTE : It is a minimal code and anyone can tweak it to run for their needs.
+```
+pip3 install csv-mqtt
+```
 
-As far as dependncy goes, the user would require paho-mqtt. Once can find it in the python3 repository for pip.
+Once installed, they can use the package by using the import
+
+```
+from csv_mqtt.csv_mqtt import CsvMqtt
+```
+
+The `CsvMqtt` can be used to create objects for creating a pipeline for csv-mqtt.
+
+For examples, one can check the example directory in the project.
