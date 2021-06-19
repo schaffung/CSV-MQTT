@@ -12,11 +12,13 @@ Name, Age and School
 
 Then the resulting MQTT Payload will be of the form,
 
+```javascript
 {
   "Name" : "dummy_name",
   "Age" : "dummy_value",
   "School" : "dummy_school"
 }
+```
 
 One can install the package using pip
 
