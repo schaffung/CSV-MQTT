@@ -3,6 +3,9 @@ import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
+with open('README.md') as f:
+    readme = f.read()
+
 setuptools.setup(
     name="csv-mqtt",
     version="1.0.2",
