@@ -7,12 +7,16 @@ Many a times, we want to read a particular .csv file and then form a MQTT payloa
 So the project as always came in due to a necessity. The idea is simple. The process will read the .csv file wherein the very first row contains the columns headers. ( Please add column headers before using the code or be ready to see something strange.)
 Then the same column headers are treated as Keys and the corresponding row values as Values in a JSON object while forming a MQTT Payload.
 
-For example, If the .csv has column headers as, 
-Name, Age and School
+For example, If the csv data is as follows,
+
+```csv
+Name,Age,School
+dummy_name,dummy_value,dummy_school
+```
 
 Then the resulting MQTT Payload will be of the form,
 
-```javascript
+```json
 {
   "Name" : "dummy_name",
   "Age" : "dummy_value",
